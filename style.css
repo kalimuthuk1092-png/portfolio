@@ -1,0 +1,202 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    background-color: #0a0a0a;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #d4af37; /* Luxury gold */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    min-height: 90vh;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    color: #bbb;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #d4af37;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* HERO IMAGE */
+.hero-image img {
+    width: 360px;
+    border-radius: 12px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 8%;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #d4af37;
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+.card {
+    background: #111;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 4px solid #d4af37;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #151515;
+}
+
+/* SKILLS */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin-bottom: 8px;
+}
+
+.progress {
+    background: #222;
+    height: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress div {
+    height: 10px;
+    background: #d4af37;
+    border-radius: 20px;
+    transition: width 1s ease-in-out;
+}
+
+/* EXPERIENCE LIST */
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+/* CONTACT */
+#contact p {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    border-top: 1px solid #222;
+    color: #888;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        margin-top: 30px;
+        width: 280px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
